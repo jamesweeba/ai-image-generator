@@ -20,9 +20,9 @@ app.use("/api/v1/generate-images", imagegenerator);
 
 console.log(__dirname)
 
-// app.listen(PORT, () => {
-//     console.log("magic happens on port " + PORT)
-// })
+app.listen(PORT, () => {
+    console.log("magic happens on port " + PORT)
+})
 
 
 
