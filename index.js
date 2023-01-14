@@ -15,10 +15,10 @@ app.get('/', (req, res) => {
     return res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 })
 
-
+console.log(__dirname)
 app.use("/api/v1/generate-images", imagegenerator);
 
-console.log(__dirname)
+
 
 app.listen(PORT, () => {
     console.log("magic happens on port " + PORT)
