@@ -19,6 +19,7 @@ app.get('/', (req, res) => {
 app.use("/api/v1/generate-images", imagegenerator);
 
 console.log(__dirname)
+console.log(path.join(__dirname, 'client/build'))
 console.log("nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn")
 
 app.listen(PORT, () => {
